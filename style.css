@@ -10,44 +10,66 @@
     font-family: Arial, sans-serif;
   }
   
-/* Transparent, stretched navbar */
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  overflow: hidden;
-}
-
-.navbar {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%; /* Stretch to full width */
-  height: 60px; /* Navbar height */
-  background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 1000; /* Ensure it stays above Three.js canvas */
-  backdrop-filter: blur(10px); /* Optional: Blur effect for better aesthetics */
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-}
-
-.navbar-content {
-  display: flex;
-  gap: 30px; /* Spacing between navbar items */
-}
-
-.nav-item {
-  color: white;
-  text-decoration: none;
-  font-size: 18px;
-  padding: 10px 20px;
-  transition: background-color 0.3s ease, color 0.3s ease;
-  border-radius: 5px;
-}
-
-.nav-item:hover {
-  background-color: rgba(255, 255, 255, 0.2); /* Slight highlight on hover */
-  color: #ffd700; /* Gold color for hover effect */
-}
-
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: row; /* Layout is horizontal: navbar and content */
+    height: 100vh;
+    overflow: hidden;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 200px; /* Fixed width for the vertical navbar */
+    height: 100vh; /* Full height */
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 20px;
+  }
+  
+  .navbar-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .nav-item {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    border-radius: 5px;
+  }
+  
+  .nav-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffd700;
+  }
+  
+  /* Page sections */
+  .page {
+    flex: 1; /* Allow sections to grow */
+    width: 100%; /* Full remaining width */
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #333;
+  }
+  
+  .page:nth-child(even) {
+    background-color: #333;
+    color: white;
+  }
+  
+  .page:nth-child(odd) {
+    background-color: #444;
+    color: white;
+  }
