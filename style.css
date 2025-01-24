@@ -10,28 +10,44 @@
     font-family: Arial, sans-serif;
   }
   
-  .navbar ul {
-    list-style-type: none;
-    background-color: transparent; /* Makes the background invisible */
-    padding: 0;
-    margin: 0;
-    display: flex; /* Ensures the items stretch across the entire width */
-    justify-content: space-between; /* Spreads items evenly */
+/* Transparent, stretched navbar */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  overflow: hidden;
 }
 
-.navbar a {
-    color: black; /* Adjusted for visibility, change as needed */
-    text-decoration: none;
-    padding: 15px;
-    display: block;
-    text-align: center;
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%; /* Stretch to full width */
+  height: 60px; /* Navbar height */
+  background-color: rgba(0, 0, 0, 0.5); /* Transparent black */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* Ensure it stays above Three.js canvas */
+  backdrop-filter: blur(10px); /* Optional: Blur effect for better aesthetics */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow */
 }
 
-.navbar a:hover {
-    background-color: hsl(0, 0%, 90%); /* Subtle hover effect */
+.navbar-content {
+  display: flex;
+  gap: 30px; /* Spacing between navbar items */
 }
 
-.navbar li {
-    flex: 1; /* Allows each list item to stretch evenly */
-    text-align: center;
+.nav-item {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px 20px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
 }
+
+.nav-item:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slight highlight on hover */
+  color: #ffd700; /* Gold color for hover effect */
+}
+
