@@ -27,7 +27,7 @@ body {
   left: 0;
   width: 200px; /* Fixed width for the vertical navbar */
   height: 100vh; /* Full height */
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgb(0, 0, 0, 0);
   display: flex;
   flex-direction: column;
   align-items: start;
