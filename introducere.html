@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 2 - Istoria Descoperirilor Spațiale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Libre Franklin', sans-serif;
+            color: white;
+            background: url('https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?cs=srgb&dl=pexels-felixmittermeier-1146134.jpg&fm=jpg') no-repeat center center/cover;
+            line-height: 1.5;
+            text-align: left;
+            padding: 20px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #146d68;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        header ul li {
+            margin-left: 20px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 2em;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        header ul li a:hover {
+            background-color: #189593;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        main {
+            margin-top: 70px;
+        }
+
+        h1, p {
+            animation: fadeInText 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 10em;
+            margin-top: 2%;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        p {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            color: #f1f1f1;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin-left: 3px;
+            border-radius: 10px;
+            border: 8px solid navy;
+        }
+
+        .caption {
+            font-size: 1.5em;
+            margin-top: 10px;
+            text-align: center;
+            color: #f1f1f1;
+        }
+
+        
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="introducere.html">Introducere</a></li>
+            <li><a href="descoperiri.html">Descoperiri</a></li>
+            <li><a href="#">Sistemul Solar</a></li>
+            <li style="margin-left: auto;"><a href="bibliografie.html">Bibliografie</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1>INTRODUCERE</h1>
+        <p>Explorarea spațiului cosmic este rezultatul curiozității umane și al dorinței de a înțelege universul. Primele încercări de a înțelege cerul au fost realizate prin observații astronomice și teorii formulate de civilizațiile antice.</p>
+
+        <div class="image-container">
+            <div>
+                <p>
+                    Civilizațiile timpurii, precum babilonienii, egiptenii și grecii antici, au studiat mișcarea stelelor, planetelor și a altor corpuri cerești. Ptolemeu, în secolul al II-lea, a dezvoltat un model geocentric al universului, care a dominat gândirea timp de peste un mileniu. Mai târziu, în secolul al XVI-lea, Nicolaus Copernic a revoluționat astronomia, propunând un model heliocentric, în care Soarele, și nu Pământul, era centrul sistemului nostru solar.
+                </p>
+            </div>
+            <div>
+                <img src="https://nmspacemuseum.org/wp-content/uploads/2019/03/Copernicus-scaled.jpg" alt="Nicolaus Copernicus">
+                <p class="caption">Nicolaus Copernic (1473-1543)</p>
+            </div>
+        </div>
+
+        <p>În secolele următoare, oameni de știință precum Galileo Galilei, Johannes Kepler și Isaac Newton au pus bazele înțelegerii moderne a spațiului, dezvoltând legile mișcării planetelor și ale gravitației.</p>
+
+        <p>Conceptul de zbor spațial a început să prindă contur în secolul al XX-lea, odată cu dezvoltarea tehnologiei rachetelor. Ideea folosirii rachetelor pentru a depăși gravitația Pământului a fost popularizată de vizionari precum Konstantin Țiolkovski, un matematician rus considerat părintele cosmonauticii moderne. În 1903, Țiolkovski a publicat lucrarea în care a prezentat ecuația rachetei, fundamentul teoretic pentru zborurile spațiale.</p>
+
+        <div class="image-container">
+            <div>
+                <p>
+                    Robert Goddard, cunoscut ca „părintele rachetelor moderne”, a fost un om de știință american care a pus bazele tehnologiilor de propulsie cu rachete. Lansa prima rachetă cu combustibil lichid pe 16 martie 1926, având un succes major pentru viitorul explorării spațiale.
+                </p>
+            </div>
+            <div>
+                <img src="https://media.defense.gov/2008/May/09/2000622194/2000/2000/0/080509-F-1234P-008.JPG">
+                <p class="caption">Rachetă cu combustibil lichid lansată de Robert Goddard (1926)</p>
+            </div>
+        </div>
+
+        <p>După Al Doilea Război Mondial, cercetarea rachetelor a fost accelerată în contextul competiției dintre Statele Unite și Uniunea Sovietică. Rachetele balistice dezvoltate în scopuri militare au fost adaptate pentru a lansa sateliți și, eventual, oameni în spațiu.</p>
+    </main>
+</body>
+</html>
