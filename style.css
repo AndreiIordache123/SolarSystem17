@@ -28,7 +28,6 @@
   }
 
   .navbar-content {
-    display: flex;
     flex-direction: column;
     gap: 20px;
     background-color: black !important; /* Force black background */
