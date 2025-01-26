@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 2 - Istoria Descoperirilor Spațiale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Libre Franklin', sans-serif;
+            color: white;
+            background: url('https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?cs=srgb&dl=pexels-felixmittermeier-1146134.jpg&fm=jpg') no-repeat center center/cover;
+            line-height: 1.5;
+            text-align: left;
+            padding: 20px;
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #146d68;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        header ul li {
+            margin-left: 20px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 2em;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        header ul li a:hover {
+            background-color: #189593;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        main {
+            margin-top: 70px;
+        }
+
+        h1, p {
+            animation: fadeInText 2s ease-in-out;
+        }
+
+        h1 {
+            font-size: 10em;
+            margin-top: 2%;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        p {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            color: #f1f1f1;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: flex-end;
+            margin-bottom: 20px;
+            align-items: flex-start;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin-left: 3px;
+            border-radius: 10px;
+            border: 8px solid navy;
+        }
+
+        .caption {
+            font-size: 1.5em;
+            margin-top: 10px;
+            text-align: center;
+            color: #f1f1f1;
+        }
+
+        
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="introducere.html">Introducere</a></li>
+            <li><a href="descoperiri.html">Descoperiri</a></li>
+            <li><a href="#">Sistemul Solar</a></li>
+            <li style="margin-left: auto;"><a href="bibliografie.html">Bibliografie</a></li>
+        </ul>
+    </header>
+    <main>
+        <h1>Bibliografie</h1>
+        <p>În realizarea acestui proiect, am consultat următoarele surse:</p>
+        <ul>
+            <li><strong>NASA</strong>. (2020). "The History of Space Exploration." <a href="https://www.nasa.gov/">https://www.nasa.gov/</a></li>
+            <li><strong>Hubble Space Telescope</strong>. (2021). "The Hubble Legacy." <a href="https://hubble.nasa.gov/">https://hubble.nasa.gov/</a></li>
+            <li><strong>Brown, S.</strong> (2019). "A Brief History of Space Discoveries." New York: Space Press.</li>
+            <li><strong>Smith, J.</strong> (2018). "Exploring the Universe: The Early Days of Space Exploration." London: Cosmic Publishers.</li>
+            <li><strong>European Space Agency</strong>. (2022). "The Evolution of Space Science." <a href="https://www.esa.int/">https://www.esa.int/</a></li>
+        </ul>
+    </main>
+
+
+</body>
+</html> 

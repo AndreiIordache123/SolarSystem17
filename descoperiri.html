@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina 2 - Istoria Descoperirilor Spațiale</title>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Libre Franklin', sans-serif;
+            color: white;
+            background: url('https://images.pexels.com/photos/1146134/pexels-photo-1146134.jpeg?cs=srgb&dl=pexels-felixmittermeier-1146134.jpg&fm=jpg') no-repeat center center/cover;
+            line-height: 1.5;
+            text-align: left;
+            padding: 20px;
+        }
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #146d68;
+            padding: 10px 0;
+            z-index: 1000;
+        }
+
+        header ul {
+            list-style: none;
+            display: flex;
+            padding: 0;
+            margin: 0;
+        }
+
+        header ul li {
+            margin-left: 20px;
+        }
+
+        header ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 2em;
+            padding: 5px 10px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        header ul li a:hover {
+            background-color: #189593;
+            color: #fff;
+            border-radius: 5px;
+        }
+
+        header ul li:last-child {
+            margin-left: auto;
+        }
+
+        main {
+            margin-top: 70px;
+        }
+
+        h1, p {
+            opacity: 0;
+            animation: fadeInText 2s forwards;
+        }
+
+        h1 {
+            font-size: 10em;
+            margin-top: 2%;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        p {
+            font-size: 2em;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+            color: #f1f1f1;
+        }
+
+        .image-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .image-container p {
+            flex: 1;
+            margin-right: 20px;
+            font-size: 2.5em;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            margin-left: 20px;
+            border-radius: 10px;
+            border: 8px solid navy;
+        }
+
+        .caption-container {
+            margin-top: 10px;
+            text-align: center;
+            width: 100%; 
+            display: flex;
+            justify-content: center; 
+        }
+
+        .caption {
+            font-size: 1.5em;
+            color: #f1f1f1;
+            text-align: center;
+            width: auto; 
+            margin: 0 auto;
+        }
+
+        .text-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .text-container p {
+            flex: 1;
+            margin-left: 20px;
+        }
+
+        @keyframes fadeInText {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="introducere.html">Introducere</a></li>
+            <li><a href="descoperiri.html">Descoperiri</a></li>
+            <li><a href="#">Sistemul Solar</a></li>
+            <li style="margin-left: auto;"><a href="bibliografie.html">Bibliografie</a></li>
+        </ul>
+    </header>
+
+   <main>
+    <h1>Descoperiri Spațiale</h1>
+    
+    <div class="image-container">
+        <p style="flex: 1; margin-right: 20px;">
+            Cursa spațială dintre SUA și URSS a fost o competiție în contextul Războiului Rece, având drept scop demonstrarea supremației tehnologice și ideologice. Totul a început în 1957, când URSS a lansat Sputnik 1, primul satelit artificial. SUA a urmat repede cu lansarea satelitului Explorer 1 în 1958.
+        </p>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/8e/Sputnik_1_satellite_model.png" alt="Imagine legată de Sputnik 1">
+            <div class="caption-container">
+                <p class="caption">Sputnik 1 (1957)</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="image-container">
+        <p>URSS a continuat să conducă prin realizări precum trimiterea cățelușei Laika în spațiu (1957) și plasarea primului om, Yuri Gagarin, pe orbită în 1961.</p>
+    </div>
+        
+    <div class="image-container text-container">
+        <div>
+            <img class="small" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0d/Neil_Armstrong_pose.jpg/640px-Neil_Armstrong_pose.jpg" alt="Imagine Neil Armstrong">
+        </div>
+        <p>
+            Statele Unite au reacționat lansând programul Apollo, stabilind ca obiectiv trimiterea unui om pe Lună. Acest lucru s-a realizat în 1969, când Neil Armstrong și Buzz Aldrin au pășit pe suprafața Lunii în cadrul misiunii Apollo 11, marcând un moment istoric și o victorie simbolică pentru SUA. 
+        </p>
+    </div>
+    <div class="caption-container">
+        <p class="caption">Neil Armstrong pe Lună (1969)</p>
+    </div>
+
+    <div class="image-container">
+        <p style="flex: 1; margin-right: 20px;">
+            În 1970, NASA a lansat Misiunile Voyager 1 și Voyager 2, două dintre cele mai importante și de succes programe de explorare a sistemului solar. Aceste sonde au fost concepute pentru a explora cele patru planete gigantice din sistemul nostru solar (Jupiter, Saturn, Uraniu și Neptun) și pentru a aduna informații despre aceste planete și despre spațiul interstelar.
+        </p>
+        <div>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Voyager_spacecraft.jpg/260px-Voyager_spacecraft.jpg" alt="Voyager 2 în apropiere de Neptun" style="width: 400px; border-radius: 10px;">
+            <div class="caption-container">
+                <p class="caption">Voyager 2</p>
+            </div>
+        </div>
+    </div>
+
+    <p>Voyager 2 a fost lansat pe 20 august 1977, de la Centrul Spațial Kennedy, la bordul unei rachete Titan IIIE.</p>
+
+    <p>Voyager 1 a fost lansat pe 5 septembrie 1977, tot cu ajutorul unei rachete Titan IIIE.</p>
+
+    <p>Este important de menționat că Voyager 2 a fost lansat primul, dar Voyager 1 a ajuns mai repede în obiectivele sale datorită traiectoriei mai directe.</p>
+
+    <p>După prăbușirea Uniunii Sovietice în 1991, Statele Unite și Rusia au început să colaboreze mai strâns în domeniul explorării spațiale. Programul Shuttle-Mir și, mai târziu, Stația Spațială Internațională (ISS) au devenit exemple de colaborare între fostele rivale.</p>
+
+    <p>Pe 20 noiembrie 1998, primul modul al ISS, Zarya (care înseamnă „Zori” în limba rusă), a fost lansat de la Baikonur Cosmodrome, în Kazahstan. Modulul Zarya a fost realizat de Rusia și a fost urmat de altele pentru a construi stația pas cu pas.</p>
+
+    <p>Pe 2 noiembrie 2000, stația spațială a primit primul său echipaj permanent, format din astronautul american William Shepherd și cosmonauții ruși Yuri Gidzenko și Sergey Krikalev. Aceștia au început să locuiască pe ISS și au efectuat primele experimente științifice în condiții de microgravitație.</p>
+
+    <p>În anii care au urmat, au fost lansate și instalate module suplimentare, inclusiv modulele americane (Destiny, Harmony), europene (Columbus) și japoneze (Kibo). Stația a început să devină un complex de cercetare în orbită, echipat cu laboratoare pentru studii științifice din domenii precum biologia, medicina, fizica și astronomia.</p>
+
+</main>
+
+</body>
+</html>
