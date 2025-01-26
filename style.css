@@ -22,7 +22,7 @@
     flex-direction: column;
     gap: 20px;
     background-color: black; /* Black background for the navbar */
-    padding: 20px;
+    
     width: 100%;
     height: 100%;
 }
