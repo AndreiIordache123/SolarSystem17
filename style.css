@@ -22,9 +22,8 @@
     flex-direction: column;
     gap: 20px;
     background-color: black; /* Black background for the navbar */
-    padding: 20px;
+    padding: 210px;
 
-    height: 100%;
 }
 
 .navbar-content span {
