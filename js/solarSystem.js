@@ -359,3 +359,5 @@ window.addEventListener("resize", () => {
   renderer.setSize(window.innerWidth, window.innerHeight);
 });
 //////////////////////////////////////
+
+renderer.setSize(window.innerWidth, window.innerHeight - 50); // Adjust height based on header size
