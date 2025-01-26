@@ -28,7 +28,8 @@
 
 .navbar-content span {
     font-size: 120px; /* Slightly increased font size */
-    color: white; /* White text for better contrast */
+    color: black; /* White text for better contrast */
     font-weight: bold;
     cursor: pointer;
+    background-color: black;
 }
